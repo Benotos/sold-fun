@@ -760,7 +760,7 @@ export function Play({ spec, daily, user, onSignUp, go, roundStats, onExit, onRe
             {spec.mode === 'free'
               ? 'Next chart'
               : caught || (def.charts !== null && ri + 1 >= def.charts)
-                ? 'See my receipt'
+                ? 'See my results'
                 : 'Next chart'}{' '}
             <kbd>SPACE</kbd>
           </button>

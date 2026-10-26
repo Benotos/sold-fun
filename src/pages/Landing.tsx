@@ -53,7 +53,7 @@ export function Landing({ go, playedToday }: Props) {
           </p>
           <div className="hero-cta">
             <button className="btn btn-gold btn-lg" onClick={() => go('daily')}>
-              {playedToday ? 'See today’s receipt' : 'Play today’s run'}
+              {playedToday ? 'See today’s results' : 'Play today’s run'}
             </button>
             <button className="btn btn-ghost btn-lg" onClick={() => go('play')}>
               All game modes
@@ -134,7 +134,7 @@ export function Landing({ go, playedToday }: Props) {
             <b>Race the bots.</b>
             <span className="muted">
               {' '}
-              {BOTS.map((b) => b.name).join(', ')} sell every chart with you. Their exits show live, and your receipt says who won.
+              {BOTS.map((b) => b.name).join(', ')} sell every chart with you. Their exits show live, and your results show who won.
             </span>
           </div>
           <button className="btn btn-ghost btn-sm" onClick={() => go('play')}>

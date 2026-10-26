@@ -37,7 +37,7 @@ export function Results({ spec, day, offline, rounds, plays, user, onSignUp, go,
   const [note, setNote] = useState('')
   const [left, setLeft] = useState(msUntilNextDay())
 
-  // everyone gets compared with the bots on the receipt, even when bots were hidden during play
+  // everyone gets compared with the bots on the results, even when bots were hidden during play
   const botTotals = useMemo(() => {
     const per = rounds.map((r) => botExits(r, spec.mode === 'daily' ? 'pro' : spec.difficulty))
     const totals = BOTS.map((b, i) => ({ bot: b, pts: per.reduce((a, x) => a + x[i].result.points, 0) }))
@@ -329,7 +329,7 @@ export function Results({ spec, day, offline, rounds, plays, user, onSignUp, go,
 
       <div className="results-grid">
         <div className="receipt-wrap">
-          <h3 className="h-sec">Your receipt</h3>
+          <h3 className="h-sec">Your exits</h3>
           <table className="receipt mono">
             <thead>
               <tr>

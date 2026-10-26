@@ -4,7 +4,7 @@ export const CONFIG = {
   siteUrl: 'https://sold-fun.xyz',
   ticker: '$SOLD',
   /** paste the contract address at launch, leave empty to show "coming soon" */
-  ca: 'ECEht7KnjvdZmJ6VyieW1Hg2X7LpSMEfBBzGfjdUbanH',
+  ca: 'Hh8FMMnopvYJPWkmi3d894vAn79ya7U4ujEReVyVpump',
   xHandle: 'SoldDotFun',
   /** share of creator rewards paid to the daily top 10, in percent */
   rewardShareOfFees: 50,

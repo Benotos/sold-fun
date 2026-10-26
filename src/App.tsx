@@ -122,7 +122,9 @@ export default function App() {
             }}
           >
             <img src="/icon-192.png" alt="" width="30" height="30" className="logo-mark" />
-            SOLD<span className="gold">.FUN</span>
+            <span>
+              SOLD<span className="gold">.FUN</span>
+            </span>
           </a>
           <nav className="nav">
             <button className={route === 'play' || route === 'daily' ? 'on' : ''} onClick={() => go('play')}>
@@ -240,7 +242,9 @@ export default function App() {
       <footer className="foot">
         <div className="wrap foot-inner">
           <div className="logo logo-sm">
-            SOLD<span className="gold">.FUN</span>
+            <span>
+              SOLD<span className="gold">.FUN</span>
+            </span>
           </div>
           <p className="muted">
             Every chart is generated and every trade is simulated. No real money is traded and nothing here is financial advice.

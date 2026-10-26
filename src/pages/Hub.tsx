@@ -156,7 +156,7 @@ export function Hub({ daily, user, onSignUp, go, roundStats, playersToday, initi
           <div className="chips mono">
             <span>10 charts</span>
             <span>Pro speed</span>
-            <span>1 attempt</span>
+            <span>Every chart counts</span>
             <span>Top 10 paid</span>
           </div>
         </div>
@@ -178,7 +178,7 @@ export function Hub({ daily, user, onSignUp, go, roundStats, playersToday, initi
             <span className="muted">PLAYED TODAY</span>
             <b>{playersToday ?? '—'}</b>
           </div>
-          <span className="btn btn-gold daily-cta">{dailyDone ? 'See receipt' : dailyStarted ? 'Continue' : 'Play today’s run'} →</span>
+          <span className="btn btn-gold daily-cta">{dailyDone ? 'See results' : dailyStarted ? 'Continue' : 'Play today’s run'} →</span>
         </div>
       </button>
 
@@ -401,7 +401,7 @@ function Setup({ mode, daily, dailyDone, dailyStarted, onBack, onStart }: SetupP
             Back
           </button>
           <button className="btn btn-gold btn-lg" onClick={() => onStart(mode)} disabled={disabled}>
-            {isDaily ? (dailyDone ? 'See my receipt' : dailyStarted ? 'Continue run' : 'Start daily run') : 'Start run'} <kbd>SPACE</kbd>
+            {isDaily ? (dailyDone ? 'See my results' : dailyStarted ? 'Continue run' : 'Start daily run') : 'Start run'} <kbd>SPACE</kbd>
           </button>
         </div>
       </div>

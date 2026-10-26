@@ -2427,3 +2427,106 @@ a.icon-btn {
   border-radius: 7px;
   flex: none;
 }
+
+/* ---------- no more paper: dark trading look for results and the daily card ---------- */
+.receipt {
+  background: var(--panel);
+  color: var(--fg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.receipt th {
+  color: var(--muted);
+  font-weight: 500;
+  border-bottom: 1px solid var(--line);
+}
+.receipt td {
+  border-bottom: 1px solid var(--line);
+}
+.receipt tbody tr:last-child td {
+  border-bottom: 0;
+}
+.receipt .muted {
+  color: var(--muted);
+}
+.receipt .gold {
+  color: var(--gold);
+}
+.receipt tfoot td {
+  border-top: 1px solid var(--line);
+  border-bottom: 0;
+  background: var(--panel-2);
+}
+.receipt .chip-top {
+  color: var(--gold);
+}
+.receipt .chip-early {
+  color: var(--muted);
+}
+.receipt .chip-late {
+  color: var(--warn);
+}
+.receipt .chip-rugged {
+  color: var(--down);
+}
+
+.daily-card {
+  color: var(--fg);
+  background: radial-gradient(120% 140% at 18% -20%, rgba(245, 184, 61, 0.22), rgba(245, 184, 61, 0.03) 55%, transparent 75%), var(--panel);
+  border: 1px solid rgba(245, 184, 61, 0.45);
+  box-shadow: 0 18px 50px -24px rgba(0, 0, 0, 0.9);
+}
+.daily-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 26px 60px -24px rgba(245, 184, 61, 0.3);
+}
+.daily-main p {
+  color: #d9cfbe;
+}
+.daily-card .mode-tag kbd {
+  color: var(--muted);
+}
+.tag-ranked {
+  background: var(--gold);
+  color: var(--ink);
+}
+.chips span {
+  border-color: var(--line);
+  color: var(--muted);
+}
+.daily-glyph .glyph {
+  stroke: var(--gold);
+}
+.daily-side {
+  border-left: 1px solid var(--line);
+}
+.daily-side .muted {
+  color: var(--muted);
+}
+.daily-side .up {
+  color: var(--up);
+}
+.daily-side .warn {
+  color: var(--warn);
+}
+.daily-cta {
+  background: var(--gold);
+  color: var(--ink);
+  box-shadow: 0 3px 0 var(--gold-deep);
+}
+.daily-card:hover .daily-cta {
+  background: #ffc75a;
+}
+@media (max-width: 640px) {
+  .daily-side {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+}
+@media (max-width: 1020px) {
+  .daily-card {
+    background: radial-gradient(120% 140% at 18% -20%, rgba(245, 184, 61, 0.22), transparent 70%), var(--panel);
+  }
+}
