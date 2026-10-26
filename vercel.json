@@ -13,14 +13,11 @@
       ]
     }
   ],
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/s/img/:id",
-      "destination": "/api/share?img=:id"
-    },
-    {
-      "source": "/s/:id",
-      "destination": "/api/share?id=:id"
+      "source": "/((?!maintenance\\.html$|favicon\\.ico$).*)",
+      "destination": "/maintenance.html",
+      "permanent": false
     }
   ]
 }
